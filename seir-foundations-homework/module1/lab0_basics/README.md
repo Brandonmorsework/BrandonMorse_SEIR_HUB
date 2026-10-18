@@ -1,6 +1,5 @@
-The completed evidence table with three distinct public IPv4 addresses.
-One short paragraph per deployment describing the launch, SSH connection, and dashboard.
-What CPU, memory, disk, and uptime tell you about the instance.
-One thing that became easier after repeating the process.
-Any errors encountered and how you resolved them.
-Confirmation that you retained the launch template and cleaned up practice instances.
+| Deployment | Public IPv4 address | Connection Method | Screenshot | Instance Terminated
+| -------- | -------- | -------- | ------ | ----- | 
+| 1  | 3.88.185.82  | EC2 / SSH  | screenshots/InstanceB_SS.png |  No (Will be eventually)
+| 2  | 98.84.149.28  | EC2 / SSH  | screenshots/InstanceC_SS.png | No (Will be eventually)
+| 3  | 54.226.75.159  | EC2 / SSH | screenshots/InstanceD_SS.png | No (Will be eventually)
