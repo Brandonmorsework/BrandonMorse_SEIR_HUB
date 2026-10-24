@@ -1,5 +1,5 @@
 Spotter = Ros Bailey
-Teammates = Ros Bailey, Matt B., Darian 
+Teammates = Ros Bailey, Matt Blac, Darian, Steven Roscoe
 Meetup Times: 
 
 Mondays 8 P.M. EST
