@@ -192,8 +192,7 @@ cat > /var/www/html/index.html <<EOF
 
     <br>
 
-    <img src="https://www.w3schools.com/images/w3schools_green.jpg"
-         alt="W3Schools.com">
+    <img src="https://raw.githubusercontent.com/Brandonmorsework/BrandonMorse_SEIR_HUB/refs/heads/main/seir-foundations-homework/module1/lab0.5_basics_continued/ec2picture/matte-black-rustic-design.webp">
 
     <br>
 
