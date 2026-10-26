@@ -183,8 +183,12 @@ cat > /var/www/html/index.html <<EOF
 <body>
 <div>
     <h1>AWS Instance Details: Class 8 Edition</h1>
-    <h1>Dusty Cloud Engineer in training!</h1>
-    <h2>I will survive the AI Tsunami!</h2>
+    <h1>Devoted Cloud Engineer in training!</h1>
+    <h2>I will thrive in the AI Tsunami!</h2>
+
+    <h2>I, Brandon Morse, Thank Theo and Ros Bailey for helping me learn about 
+    EC2s in AWS. One step closer to a new world of opportunities!</h2>
+    <h3>With this Class, I will net over "$"120k per year</h3>
 
     <br>
 
