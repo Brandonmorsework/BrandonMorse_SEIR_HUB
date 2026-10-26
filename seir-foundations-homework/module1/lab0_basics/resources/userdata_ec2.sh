@@ -188,7 +188,7 @@ cat > /var/www/html/index.html <<EOF
 
     <h2>I, Brandon Morse, Thank Theo and Ros Bailey for helping me learn about 
     EC2s in AWS. One step closer to a new world of opportunities!</h2>
-    <h3>With this Class, I will net over "$"120k per year</h3>
+    <h3>With this Class, I will net over $120k per year</h3>
 
     <br>
 
