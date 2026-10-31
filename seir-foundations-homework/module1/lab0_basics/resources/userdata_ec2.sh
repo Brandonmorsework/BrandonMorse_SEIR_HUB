@@ -1,10 +1,7 @@
 #!/bin/bash
 # SEIR Foundations - Amazon Linux 2023 EC2 User Data
-# Combined SSH/dashboard + HTTP web server configuration
-# Paste this entire file into:
-# EC2 > Advanced details > User data
-
-set -u
+# Paste this entire file into EC2 > Advanced details > User data.
+# set -u
 
 ###############################################################################
 # PART 1 — SEIR FOUNDATIONS SSH DASHBOARD
@@ -184,11 +181,7 @@ cat > /var/www/html/index.html <<EOF
 <div>
     <h1>AWS Instance Details: Class 8 Edition</h1>
     <h1>Devoted Cloud Engineer in training!</h1>
-    <h2>I will thrive in the AI Tsunami!</h2>
-
-    <h2>I, Brandon Morse, Thank Theo and Ros Bailey for helping me learn about 
-    EC2s in AWS. One step closer to a new world of opportunities!</h2>
-    <h3>With this Class, I will net over $120k per year</h3>
+    <h2>I will thrive in this AI Tsunami!</h2>
 
     <br>
 
