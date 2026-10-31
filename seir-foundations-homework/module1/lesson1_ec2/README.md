@@ -28,3 +28,17 @@ Run 5:
 Run 6:
 
 Run 7:
+
+Mistake I Made:
+
+- Not assigning the proper security group
+
+- Creating an instance from an image that was not completely deployed
+
+- 
+
+Commands I know by heart:
+
+- la -al
+
+- clear
