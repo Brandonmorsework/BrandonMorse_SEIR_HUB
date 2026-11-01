@@ -1,0 +1,33 @@
+1. Why might SSHing into my ec2 instance be working properly, but putting http://<Public IP ADDRESS> not be displaying the webpage?
+
+AI Response: Security group doesn’t allow port 80
+This is the #1 culprit. SSH works because you opened port 22, but HTTP needs its own inbound rule: Type HTTP, Port 80, Source 0.0.0.0/0. If you’re using HTTPS, you’ll need port 443 as well.
+Nothing is listening on port 80
+The web server (nginx, Apache, your app) may not be installed, not running, or crashed.
+
+Answer: I created inbound rules and selected the wrong security group, believing I was selecting the tailored security group with port 80 and port 22.
+
+2. How can I ensure the webpage loads when SSHing is successful, but the webpage ec2 is not?
+
+AI Response: From your phone on cellular data (Wi-Fi off), try <IP Address>. If that works, your home, work, or VPN network is blocking port 80.
+
+Answer: Using my mobile hotspot did not allow the webpage to load either and loading the webpage on mobile was unsuccessful.
+
+3. Is there anything in this ec2 startup script that would cause the webpage to not load?
+
+AI Answer: Your old failure was a connection timeout, which happens at the network layer before Apache ever sees a request. No HTML content can cause that.
+A broken image link wouldn’t stop the page loading either. The browser would just show a broken-image icon.
+
+Answer: The ec2 instance was not the culprit, but the AI agent was pretty vague here because I needed to breakdown the ec2 startup script line by line until I figured out the issue lied within the security group setup later on.
+
+4. Why are the pngs entered through my file path not appearing in the .md language here?
+
+AI Answer: Your table cell contains just a file path as plain text. GitHub only renders an image when you use Markdown image syntax, so it’s showing the path as literal text.
+Fix: wrap the path in ![alt text](path)
+
+
+5. How can I do this section?: Decode the fixed-width ledger by hand using cut -c (screenshot = cobol_ledger_decode.jpg)
+
+AI Answer: grep 100001 data/accounts.dat | cut -c1-6      # account number
+grep 100001 data/accounts.dat | cut -c7-26     # name (example range)
+grep 100001 data/accounts.dat | cut -c<start>-<end>   # balance field
