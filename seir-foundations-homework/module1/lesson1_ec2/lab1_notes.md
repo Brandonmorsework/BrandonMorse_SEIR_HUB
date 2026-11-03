@@ -39,7 +39,11 @@ Creation of this instance and SSHing into this ran a lot faster and smoother. Co
 
 Run 6: 
 
+Creation of this instance was seamless, as I was able to create this from the template and rename the Name tag.
+
 Run 7:
+
+Creation of this instance was also seamless, as the commands I had saved in order allowed me to complete the last
 
 Mistake I Made:
 
@@ -47,10 +51,10 @@ Mistake I Made:
 
 - Creating an instance from an image that was not completely deployed
 
-- 
-
 Commands I know by heart:
 
 - la -al
 
 - clear
+
+- sudo dnf install -y git

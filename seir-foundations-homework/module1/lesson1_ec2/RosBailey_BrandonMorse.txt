@@ -1,14 +1,14 @@
 Spotter Ros Bailey's Shared Notes:
 
--
+- Learned how to provision local ec2 instances manually and subsequently through templates
 
--
+- Understanding how install scripts work to pull trustworthy packages from verified vendors
 
--
+- The superuser do "sudo" is used to elevate permissions for package installs
 
--
+- Instances are divided into families, classes and sizes to meet specific needs of end-users in the cloud
 
--
+- Learned how to troubleshoot markdown and git clone errors in the terminal and EC2 instances while SSH'd in
 
 -------------------------------------------
 
