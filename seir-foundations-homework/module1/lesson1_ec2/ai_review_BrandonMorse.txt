@@ -1,3 +1,6 @@
+Chatbot used: Claude
+Message Thread: https://claude.ai/share/95020865-30ab-41bd-b4bc-e15b91f48546
+
 1. Why might SSHing into my ec2 instance be working properly, but putting http://<Public IP ADDRESS> not be displaying the webpage?
 
 AI Response: Security group doesn’t allow port 80
@@ -7,11 +10,17 @@ The web server (nginx, Apache, your app) may not be installed, not running, or c
 
 Answer: I created inbound rules and selected the wrong security group, believing I was selecting the tailored security group with port 80 and port 22.
 
+----------------------------------------------------------------------------------
+
+
 2. How can I ensure the webpage loads when SSHing is successful, but the webpage ec2 is not?
 
 AI Response: From your phone on cellular data (Wi-Fi off), try <IP Address>. If that works, your home, work, or VPN network is blocking port 80.
 
 Answer: Using my mobile hotspot did not allow the webpage to load either and loading the webpage on mobile was unsuccessful.
+
+----------------------------------------------------------------------------------
+
 
 3. Is there anything in this ec2 startup script that would cause the webpage to not load?
 
@@ -19,6 +28,9 @@ AI Answer: Your old failure was a connection timeout, which happens at the netwo
 A broken image link wouldn’t stop the page loading either. The browser would just show a broken-image icon.
 
 Answer: The ec2 instance was not the culprit, but the AI agent was pretty vague here because I needed to breakdown the ec2 startup script line by line until I figured out the issue lied within the security group setup later on.
+
+
+
 
 4. Why are the pngs entered through my file path not appearing in the .md language here?
 
