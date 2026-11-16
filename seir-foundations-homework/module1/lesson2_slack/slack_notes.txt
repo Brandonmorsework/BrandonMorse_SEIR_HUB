@@ -1,0 +1,45 @@
+hw1: 
+Alert Message Test
+
+Simple alert message for connectivity testing
+
+hw2: 
+Which severities arrived, and WHY those?
+
+SLACK_ALERT_SEVERITY=INFO
+All 4 alerts arrived under this severity type because all information is expected to display
+
+SLACK_ALERT_SEVERITY=ERROR
+INFO and WARNING are skipped when by the threshold in .env because they are used a routine/early-warning noise. 
+These alerts are most likely to be ignored by users on a team, which could lead to them ignoring other future important errors from the alerts channel.
+
+hw3:
+How many hours apart are server time and YOUR wall clock? 
+
+Since the alert displays time in UTC, and given I am EST, the time is 5 hours ahead of mine.
+
+hw4: 
+Why is a quiet INFO here GOOD design, not a failure?
+
+Similarly to script 2 that was ran, quiet info is a good design because alerts channels should be used for updating users on important info or edge-cases that require their attention. 
+If users were updated for the smallest changes in disk usage, they would learn to ignore it, training them to become blind to important warnings that could cause instance failure.
+
+
+hw5: 
+What would make this number spike on the Balerica bank?
+
+An influx of customer transactions on the bank or a DDOS attack on the bank service.
+
+hw6: 
+Which of these fake incidents deserves to wake a human at 3 AM?
+
+CRITICAL account lookup code 12
+ERROR /payments
+ERROR payment_post code 8
+
+These errors will likely cause outages if not acted upon. 
+Especially since this is a banking service, which needs to follow compliance requirements, these errors and critical alerts need immediate attention, otherwise jobs will be lost and people will frown.
+
+hw7:
+Simple Monitoring report!
+
